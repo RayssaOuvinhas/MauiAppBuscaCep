@@ -1,7 +1,5 @@
 ﻿using MauiAppBuscaCep.Models;
 using Newtonsoft.Json;
-using System.Net.Http;
-using System.Runtime.ConstrainedExecution;
 
 namespace MauiAppBuscaCep.Services
 {
@@ -29,7 +27,7 @@ namespace MauiAppBuscaCep.Services
             return end;
         }
 
-        public static async Task<List<Bairro>> GetBairrosByIdCidade(int id_cidade)
+        public static async Task<List<Bairro>> GetBairrosByIdCidade(string id_cidade)
         {
             List<Bairro> arr_bairros = new List<Bairro>();
 
@@ -50,7 +48,7 @@ namespace MauiAppBuscaCep.Services
             return arr_bairros;
         }
 
-        public static async Task<List<Cidade>> GetCidadesByEstado(int uf)
+        public static async Task<List<Cidade>> GetCidadesByEstado(string uf)
         {
             List<Cidade> arr_cidade = new List<Cidade>();
 
