@@ -4,9 +4,9 @@
     {
         public App()
         {
-            InitializeComponent();
+            InitializeComponent(); 
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Views.Menu());
         }
     }
 }
